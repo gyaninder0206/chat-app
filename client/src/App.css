@@ -1,0 +1,55 @@
+.room-list li {
+  list-style: none;
+}
+
+.room-item {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  text-align: left;
+}
+
+.online-user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.online-user-meta {
+  min-width: 0;
+}
+
+.online-user-room {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: capitalize;
+}
+
+.empty-sidebar-copy {
+  padding: 8px;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+
+.message-group + .message-group {
+  margin-top: 10px;
+}
+
+.message-bubble {
+  white-space: pre-wrap;
+}
+
+@media (max-width: 768px) {
+  .room-item {
+    text-align: center;
+  }
+
+  .online-user-room {
+    display: none;
+  }
+
+  .logout-btn {
+    padding: 8px;
+  }
+}
